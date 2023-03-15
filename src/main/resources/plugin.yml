@@ -1,0 +1,4 @@
+name: TrollSmpPlugin
+version: '${project.version}'
+main: com.rotsyl.trollsmpplugin.Main
+api-version: 1.17
