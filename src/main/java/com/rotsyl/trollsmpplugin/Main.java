@@ -10,9 +10,12 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        
+        /* Change block drops - grass drops dirt and dirt drops grass (Funny #1) */
         Bukkit.getPluginManager().registerEvents(BlockDropManager.getInstance(), this);
-        BlockDropManager.getInstance().addBlockDrop(Material.DIRT, new ItemStack(Material.COBBLED_DEEPSLATE));
-        // rotator likes men
+        BlockDropManager.getInstance().addBlockDrop(Material.DIRT, new ItemStack(Material.GRASS_BLOCK));
+        BlockDropManager.getInstance().addBlockDrop(Material.GRASS_BLOCK, new ItemStack(Material.DIRT));
+        // sylin instanceof gay (result: true)
 
     }
 
