@@ -10,9 +10,10 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-
         Bukkit.getPluginManager().registerEvents(BlockDropManager.getInstance(), this);
         BlockDropManager.getInstance().addBlockDrop(Material.DIRT, new ItemStack(Material.COBBLED_DEEPSLATE));
+        // rotator likes men
+
     }
 
     @Override
